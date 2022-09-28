@@ -1,0 +1,30 @@
+<section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Better Food Recipe For Your Health</h1>
+          <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem</h2>
+            <% if(user){%>
+              <div class="d-flex justify-content-center justify-content-lg-start">
+                <a href="/logout" class="btn-get-started scrollto">Logout</a>
+              </div>
+
+            <%}
+            else {%>
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    <a href="/login" class="btn-get-started scrollto">Login</a>
+                    <a href="/signup" class="btn-get-started scrollto">Get Started</a>
+                </div>
+                
+            <%}%>
+
+            <!-- <a href="/login" class="btn-get-started"><i class="bi bi-play-circle"></i><span>Get Started</span></a> -->
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="img/hero-image.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
